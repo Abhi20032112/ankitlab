@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply bg-slate-50 text-slate-800 antialiased;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/60 backdrop-blur-lg border border-white/20 rounded-2xl shadow-lg;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500 bg-clip-text text-transparent;
+  }
+  
+  .glow-effect {
+    box-shadow: 0 0 40px rgba(100, 116, 139, 0.2);
+  }
+
+  .neon-glow-blue {
+    filter: drop-shadow(0 0 8px theme('colors.blue.400'));
+  }
+
+  .neon-glow-teal {
+    filter: drop-shadow(0 0 8px theme('colors.teal.400'));
+  }
+
+  .neon-glow-purple {
+     filter: drop-shadow(0 0 8px theme('colors.purple.400'));
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-teal-400 to-blue-500 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply from-teal-300 to-blue-400;
+}
