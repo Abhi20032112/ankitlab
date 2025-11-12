@@ -4,7 +4,7 @@ const HeroImage = () => {
   return (
     <div className='flex justify-center items-center'>
       <img
-        src='/images/logo.jpeg'
+        src='/images/ankit-logo.jpeg'
         alt='Ankit Lab Chemicals Logo'
       />
     </div>

@@ -8,7 +8,6 @@ const About = () => {
   const [ref, isInView] = useInView({ threshold: 0.2, triggerOnce: true });
   const [storyRef, storyInView] = useInView({ threshold: 0.2, triggerOnce: true });
   const [missionRef, missionInView] = useInView({ threshold: 0.2, triggerOnce: true });
-  const [teamRef, teamInView] = useInView({ threshold: 0.2, triggerOnce: true });
   const [testimonialsRef, testimonialsInView] = useInView({ threshold: 0.2, triggerOnce: true });
 
   const values = [
@@ -16,13 +15,6 @@ const About = () => {
     { icon: Shield, title: 'Integrity', description: 'Trusted partnerships' },
     { icon: Zap, title: 'Service Support', description: 'Expert guidance' },
     { icon: Truck, title: 'Fast Delivery', description: 'Timely service' },
-  ];
-
-  const team = [
-    { name: 'Ankit Kumar', role: 'Founder & CEO', image: '/images/generated-image.png' },
-    { name: 'Dr. Priya Sharma', role: 'Technical Director', image: '/images/WhatsApp Image 2025-11-08 at 15.54.27_b2ce55bc.jpg' },
-    { name: 'Rajesh Gupta', role: 'Operations Manager', image: '/images/WhatsApp Image 2025-11-08 at 15.54.28_587d6a46.jpg' },
-    { name: 'Meera Patel', role: 'Quality Assurance Lead', image: '/images/WhatsApp Image 2025-11-08 at 15.54.29_0cbfa2e1.jpg' },
   ];
 
   const testimonials = [
@@ -155,38 +147,7 @@ const About = () => {
           </div>
         </section>
 
-        {/* Our Team */}
-        <section id="team" className="py-16 bg-slate-50">
-          <div className="container mx-auto px-6">
-            <motion.div
-              ref={teamRef}
-              initial={{ opacity: 0, y: 50 }}
-              animate={teamInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8 }}
-              className="text-center mb-12"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">Our Team</h2>
-              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Meet the dedicated professionals behind Ankit Lab Chemicals, committed to serving the scientific community.
-              </p>
-            </motion.div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {team.map((member, index) => (
-                <motion.div
-                  key={member.name}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={teamInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-                  className="glass-card p-6 text-center hover:bg-white/80 transition-all duration-300 group"
-                >
-                  <img src={member.image} alt={member.name} className="w-24 h-24 rounded-full mx-auto mb-4 object-cover" />
-                  <h4 className="text-xl font-bold mb-2 text-slate-700">{member.name}</h4>
-                  <p className="text-slate-500">{member.role}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
+
 
         {/* Why Choose Us / Testimonials */}
         <section id="testimonials" className="py-16 bg-white">

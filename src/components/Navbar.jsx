@@ -25,7 +25,7 @@ const navLinks = [
     ],
   },
   { name: 'Services', path: '/services', icon: Settings },
-  { name: 'Brands', path: '/brands', icon: Award },
+  { name: 'Partnership', path: '/brands', icon: Award },
   { name: 'Contact', path: '/contact', icon: Mail },
 ];
 
@@ -129,11 +129,13 @@ const Navbar = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
-        className="fixed top-0 left-0 right-0 z-40 bg-white/80 backdrop-blur-lg"
+        className="fixed top-0 left-0 right-0 z-40 bg-blue-200"
       >
         <div className="container mx-auto px-6 flex justify-between items-center h-20">
           <Link to="/" className="flex items-center gap-2">
-            <img src="/images/logo.jpeg" alt="Ankit Lab Chemicals Logo" className="w-8 h-8 rounded" />
+            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+            <img src="/images/ankit-logo.jpeg" alt="Ankit Lab Chemicals Logo" className="w-8 h-8 rounded-full" />
+            </div>
             <span className="text-xl font-bold gradient-text">Ankit Lab Chemicals</span>
           </Link>
 

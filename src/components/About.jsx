@@ -38,9 +38,9 @@ const About = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="glass-card p-8 md:p-12 mb-12"
         >
-          <h3 className="text-2xl font-bold mb-4 text-teal-400">Authorized Partners</h3>
+          <h3 className="text-2xl font-bold mb-4 text-teal-400">We are Authorised Service Partner and Reseller</h3>
           <p className="text-lg text-slate-300 mb-6">
-            We are proud authorized partners of industry-leading brands:
+            Of industry-leading brands:
           </p>
           <div className="flex flex-wrap gap-4 text-lg font-semibold">
             {['Borosil', 'Wensar', 'Systonic', 'Finar', 'Imparta', 'Merck', 'Polylab'].map((brand, index) => (

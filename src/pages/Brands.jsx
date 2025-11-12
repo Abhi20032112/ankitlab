@@ -30,10 +30,10 @@ const Brands = () => {
                         >
                             <h1 className="text-4xl md:text-5xl font-bold mb-6">
                                 <Award className="inline-block w-12 h-12 mr-4 text-teal-500" />
-                                <span className="gradient-text">Our Brand Partners</span>
+                                <span className="gradient-text">Partnership</span>
                             </h1>
                             <p className="text-xl text-slate-500 max-w-3xl mx-auto">
-                                We collaborate with the most trusted and renowned brands in the industry to ensure quality and reliability.
+                                We are Authorised Service Partner and Reseller of Borosil, Wensar, Systonics, Finar/Actylis, Oxford Chemical, Nice, Loba, Himedia, Tarson, Polylab, Mettler-Toledo, Ion-exchange, Labix and Merck.
                             </p>
                         </motion.div>
 

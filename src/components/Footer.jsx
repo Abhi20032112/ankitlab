@@ -56,7 +56,7 @@ const Footer = () => {
               <Beaker size={30} />
             </FloatingIcon>
             <Link to="/" className="flex items-center gap-2 mb-2">
-              <img src="/images/logo.jpeg" alt="Ankit Lab Chemicals Logo" className="w-8 h-8 rounded" />
+              <img src="/images/ankit-logo.jpeg" alt="Ankit Lab Chemicals Logo" className="w-8 h-8 rounded-full" />
               <span className="text-xl font-bold gradient-text">Ankit Lab Chemicals</span>
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
