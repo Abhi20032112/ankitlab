@@ -13,7 +13,8 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  @apply bg-slate-50 text-slate-800 antialiased;
+  @apply text-slate-800 antialiased;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 25%, #cbd5e1 50%, #94a3b8 75%, #64748b 100%);
   overflow-x: hidden;
 }
 
@@ -21,11 +22,141 @@ body {
   .glass-card {
     @apply bg-white/60 backdrop-blur-lg border border-white/20 rounded-2xl shadow-lg;
   }
-  
+
   .gradient-text {
-    @apply bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-cyan-500 via-teal-500 to-blue-600 bg-clip-text text-transparent;
   }
-  
+
+  /* Professional Gradient Palette for Chemical Laboratory Company */
+  /* Inspired by corporate blues, greens for trust, with subtle futuristic accents */
+
+  /* Primary Gradient: Corporate Blue to Navy (Trust, Professionalism, Depth) */
+  /* Hex: #1e3a8a (Blue), #1e40af (Deep Blue), #0f172a (Navy) */
+  /* Direction: Linear 135deg */
+  /* Represents: Reliable precision and scientific authority */
+  .gradient-bg-primary {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #0f172a 100%);
+  }
+  .dark .gradient-bg-primary {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #0f172a 100%);
+  }
+
+  /* Secondary Gradient: Light Blue to White (Cleanliness, Purity) */
+  /* Hex: #e0f2fe (Light Blue), #f1f5f9 (Gray), #ffffff (White) */
+  /* Direction: Linear 135deg */
+  /* Represents: Sterile lab environments and pure compounds */
+  .gradient-bg-secondary {
+    background: linear-gradient(135deg, #e0f2fe 0%, #f1f5f9 50%, #ffffff 100%);
+  }
+  .dark .gradient-bg-secondary {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+  }
+
+  /* Accent Gradient: Teal to Cyan (Innovation, Energy) */
+  /* Hex: #0d9488 (Teal), #06b6d4 (Cyan) */
+  /* Direction: Radial */
+  /* Represents: Advanced chemical processes and innovation */
+  .gradient-bg-accent {
+    background: radial-gradient(circle, #0d9488 0%, #06b6d4 100%);
+  }
+  .dark .gradient-bg-accent {
+    background: radial-gradient(circle, #0f766e 0%, #0891b2 100%);
+  }
+
+  /* Hero Background: Subtle Blue to Navy (Depth, Horizon) */
+  /* Hex: #f8fafc (Light), #e2e8f0 (Gray), #64748b (Slate) */
+  /* Direction: Linear 135deg */
+  /* Represents: Broad scientific horizons */
+  .gradient-bg-hero {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 25%, #cbd5e1 50%, #94a3b8 75%, #64748b 100%);
+  }
+  .dark .gradient-bg-hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%);
+  }
+
+  /* Section Background: White to Light Blue */
+  /* Hex: #ffffff (White), #f1f5f9 (Gray), #e2e8f0 (Blue Gray) */
+  /* Direction: Linear 135deg */
+  /* Represents: Clean, professional sections */
+  .gradient-bg-section {
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 50%, #e2e8f0 100%);
+  }
+  .dark .gradient-bg-section {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  }
+
+  /* Card Background: Glassmorphism */
+  /* Hex: #ffffff (White), #f8fafc (Light), #f1f5f9 (Gray) */
+  /* Direction: Linear 135deg */
+  /* Represents: Transparent, modern cards */
+  .gradient-bg-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(248,250,252,0.6) 50%, rgba(241,245,249,0.4) 100%);
+  }
+  .dark .gradient-bg-card {
+    background: linear-gradient(135deg, rgba(15,23,42,0.8) 0%, rgba(30,41,59,0.6) 50%, rgba(51,65,85,0.4) 100%);
+  }
+
+  /* Button Gradients */
+  .gradient-btn-primary {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  }
+  .dark .gradient-btn-primary {
+    background: linear-gradient(135deg, #334155 0%, #475569 100%);
+  }
+
+  .gradient-btn-accent {
+    background: radial-gradient(circle, #0d9488 0%, #06b6d4 100%);
+  }
+  .dark .gradient-btn-accent {
+    background: radial-gradient(circle, #0f766e 0%, #0891b2 100%);
+  }
+
+  .gradient-btn-hover {
+    background: linear-gradient(135deg, #0891b2 0%, #0d9488 100%);
+  }
+  .dark .gradient-btn-hover {
+    background: linear-gradient(135deg, #0e7490 0%, #0f766e 100%);
+  }
+
+  /* Navbar/Footer Gradient: Professional Blue */
+  /* Hex: #1e3a8a (Blue), #1e40af (Deep Blue) */
+  /* Direction: Linear 135deg */
+  /* Represents: Sleek, corporate interfaces */
+  .gradient-navbar {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  }
+  .dark .gradient-navbar {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  }
+
+  /* Highlight/CTA Gradient: Cyan to Teal */
+  /* Hex: #06b6d4 (Cyan), #0891b2 (Teal), #0d9488 (Teal) */
+  /* Direction: Linear 135deg */
+  /* Represents: Action-oriented energy */
+  .gradient-highlight {
+    background: linear-gradient(135deg, #06b6d4 0%, #0891b2 50%, #0d9488 100%);
+  }
+  .dark .gradient-highlight {
+    background: linear-gradient(135deg, #0891b2 0%, #0e7490 50%, #0f766e 100%);
+  }
+
+  /* Text Highlight Gradient: Cyan to Teal */
+  /* Hex: #06b6d4 (Cyan), #0d9488 (Teal) */
+  /* Direction: Linear 90deg */
+  /* Represents: Professional highlights */
+  .gradient-text-highlight {
+    background: linear-gradient(90deg, #06b6d4 0%, #0d9488 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .dark .gradient-text-highlight {
+    background: linear-gradient(90deg, #0891b2 0%, #0f766e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   .glow-effect {
     box-shadow: 0 0 40px rgba(100, 116, 139, 0.2);
   }

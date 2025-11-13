@@ -51,7 +51,7 @@ const Products = () => {
                                 <span className="gradient-text">Our Product Categories</span>
                             </h1>
                             <p className="text-xl text-slate-500 max-w-3xl mx-auto">
-                                Explore our comprehensive range of laboratory essentials from world-class manufacturers.
+                                We offer a complete range of laboratory products designed to meet the diverse needs of research, education, and industry. Our catalog includes everything from basic consumables to advanced analytical instruments, all sourced from trusted manufacturers to ensure reliability and performance.
                             </p>
                         </motion.div>
 

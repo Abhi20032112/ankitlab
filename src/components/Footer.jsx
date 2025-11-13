@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Beaker, Twitter, Linkedin, Facebook, Microscope, FlaskConical, TestTube, Package, Home, Settings, Award, Mail, FlaskRound } from 'lucide-react';
+import { Beaker, Twitter, Linkedin, Facebook, Microscope, FlaskConical, TestTube, Package, Home, Settings, Award, Mail, FlaskRound, MessageCircle } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 import { motion } from 'framer-motion';
 import { useInView } from '@/hooks/useInView';
@@ -36,7 +36,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-gray-900 border-t border-gray-700 pt-24 pb-8 overflow-hidden">
+    <footer className="relative gradient-bg-primary border-t border-gray-700 pt-24 pb-8 overflow-hidden">
       <div className="container mx-auto px-6 relative z-10" ref={footerRef}>
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12"
@@ -56,8 +56,8 @@ const Footer = () => {
               <Beaker size={30} />
             </FloatingIcon>
             <Link to="/" className="flex items-center gap-2 mb-2">
-              <img src="/images/ankit-logo.jpeg" alt="Ankit Lab Chemicals Logo" className="w-8 h-8 rounded-full" />
-              <span className="text-xl font-bold gradient-text">Ankit Lab Chemicals</span>
+              <img src="/images/ankit-logo.jpeg" alt="Ankit Lab Chemicals Logo" className="w-12 h-12 rounded-full" />
+            <span className="text-xl font-bold text-white">Ankit Lab Chemicals</span>
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
               Your trusted partner for high-grade research chemicals, lab consumables, and scientific instruments. Empowering scientific excellence.
@@ -111,6 +111,7 @@ const Footer = () => {
               C/o-Ashok Kumar, Ground Floor, New Punaichak, Patna, Bihar - 800001
             </p>
             <div className="flex space-x-4">
+              <motion.a href="https://wa.me/1234567890" target="_blank" variants={socialIconVariants} whileHover="hover" className="text-gray-600 hover:text-green-600 transition-colors hover:drop-shadow-[0_0_5px_rgba(34,197,94,0.5)]"><MessageCircle /></motion.a>
               <motion.a href="#" target="_blank" variants={socialIconVariants} whileHover="hover" className="text-gray-600 hover:text-blue-600 transition-colors hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)]"><Twitter /></motion.a>
               <motion.a href="#" target="_blank" variants={socialIconVariants} whileHover="hover" className="text-gray-600 hover:text-blue-600 transition-colors hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)]"><Linkedin /></motion.a>
               <motion.a href="#" target="_blank" variants={socialIconVariants} whileHover="hover" className="text-gray-600 hover:text-blue-600 transition-colors hover:drop-shadow-[0_0_5px_rgba(59,130,246,0.5)]"><Facebook /></motion.a>
@@ -120,7 +121,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 pt-8 text-center text-gray-300 text-sm">
           <p>© 2025 Ankit Lab Chemicals | Authorized Partner of Borosil, Wensar, Systonic, Finar, Imparta, Polylab & Merck</p>
-          <p>Managed by <a href="https://ards.in" target="_blank" className="hover:text-blue-600 transition-colors"><span className="gradient-text">Alpenrose digital solutions</span></a></p>
+          <p>Managed by <a href="https://ards.in" target="_blank" className="hover:text-blue-600 transition-colors"><span className="text-white">Alpenrose Digital Solutions</span></a></p>
         </div>
       </div>
     </footer>

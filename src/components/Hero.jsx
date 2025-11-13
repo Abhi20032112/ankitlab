@@ -35,7 +35,13 @@ const Hero = () => {
           className="flex justify-center mb-6"
         >
           <div className="glass-card p-4 inline-block glow-effect">
-            <Beaker className="w-16 h-16 text-teal-400" />
+            <motion.img
+              src="/images/ankit-logo.jpeg"
+              alt="Ankit Lab Chemicals Logo"
+              className="w-20 h-20 rounded-full"
+              animate={{ rotate: 360 }}
+              transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+            />
           </div>
         </motion.div>
 

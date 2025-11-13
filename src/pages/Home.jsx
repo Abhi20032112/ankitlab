@@ -43,6 +43,8 @@ const productImages = [
 
 const sliderImages = [
   "/images/generated-image.png",
+  "/images/hero1.png",
+  "/images/hero2.jpeg",
 ];
 
 const Home = () => {
@@ -58,7 +60,7 @@ const Home = () => {
 
   return (
     <AnimatedPage>
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 gradient-bg-hero">
         <FloatingMolecules />
         <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.01)_1px,transparent_1px)] bg-[size:100px_100px]"></div>
 
@@ -118,7 +120,7 @@ const Home = () => {
       </section>
 
       {/* Products Section */}
-      <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="py-16 gradient-bg-section">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -171,7 +173,7 @@ const Home = () => {
       </section>
 
       {/* Clients Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 gradient-bg-card">
         <div className="container mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

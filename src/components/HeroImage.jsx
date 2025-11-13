@@ -6,6 +6,7 @@ const HeroImage = () => {
       <img
         src='/images/ankit-logo.jpeg'
         alt='Ankit Lab Chemicals Logo'
+        className='w-12 h-12 rounded-full'
       />
     </div>
   );

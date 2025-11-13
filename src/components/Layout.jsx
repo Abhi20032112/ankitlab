@@ -16,7 +16,7 @@ const Layout = () => {
         <title>{pageTitle}</title>
         <meta name="description" content={description} />
       </Helmet>
-      <div className="min-h-screen bg-slate-50 overflow-hidden flex flex-col">
+      <div className="min-h-screen gradient-bg-hero overflow-hidden flex flex-col">
         <Navbar />
         <main className="flex-grow">
           <Outlet />

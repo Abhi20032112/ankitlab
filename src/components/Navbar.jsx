@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Beaker, ChevronDown, Home, Package, Settings, Award, Mail, FlaskRound, Microscope, TestTube } from 'lucide-react';
+import { Beaker, ChevronDown, Home, Package, Settings, Award, Mail, FlaskRound, Microscope, TestTube, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -52,9 +52,9 @@ const AnimatedHamburgerButton = ({ isOpen, onClick }) => {
       initial={false}
       transition={{ type: 'spring', stiffness: 260, damping: 20 }}
     >
-      <motion.span variants={topVariants} className="block absolute h-0.5 w-full bg-gray-900" style={{ top: '6px' }} />
-      <motion.span variants={middleVariants} className="block absolute h-0.5 w-full bg-gray-900" style={{ top: '14px' }} />
-      <motion.span variants={bottomVariants} className="block absolute h-0.5 w-full bg-gray-900" style={{ top: '22px' }} />
+      <motion.span variants={topVariants} className="block absolute h-0.5 w-full bg-white" style={{ top: '6px' }} />
+      <motion.span variants={middleVariants} className="block absolute h-0.5 w-full bg-white" style={{ top: '14px' }} />
+      <motion.span variants={bottomVariants} className="block absolute h-0.5 w-full bg-white" style={{ top: '22px' }} />
     </motion.button>
   );
 };
@@ -82,7 +82,7 @@ const Navbar = () => {
           <DropdownMenuTrigger asChild>
             <motion.button
               whileHover={{ scale: 1.05 }}
-              className="flex items-center gap-1 text-gray-900 hover:text-blue-600 transition-colors"
+              className="flex items-center gap-1 text-white hover:text-cyan-300 transition-colors"
             >
               <item.icon className="w-4 h-4" />
               {item.name}
@@ -110,7 +110,7 @@ const Navbar = () => {
     }
     return (
       <motion.div whileHover={{ scale: 1.05 }}>
-        <NavLink to={item.path} className={({ isActive }) => `flex items-center gap-1 text-gray-900 hover:text-blue-600 transition-colors ${isActive ? 'text-blue-600 font-semibold' : ''}`}>
+        <NavLink to={item.path} className={({ isActive }) => `flex items-center gap-1 text-white hover:text-cyan-300 transition-colors ${isActive ? 'text-cyan-300 font-semibold' : ''}`}>
           <item.icon className="w-4 h-4" />
           {item.name}
         </NavLink>
@@ -129,14 +129,14 @@ const Navbar = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
-        className="fixed top-0 left-0 right-0 z-40 bg-blue-200"
+        className="fixed top-0 left-0 right-0 z-40 gradient-bg-primary"
       >
         <div className="container mx-auto px-6 flex justify-between items-center h-20">
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-            <img src="/images/ankit-logo.jpeg" alt="Ankit Lab Chemicals Logo" className="w-8 h-8 rounded-full" />
+            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+            <img src="/images/ankit-logo.jpeg" alt="Ankit Lab Chemicals Logo" className="w-12 h-12 rounded-full" />
             </div>
-            <span className="text-xl font-bold gradient-text">Ankit Lab Chemicals</span>
+            <span className="text-xl font-bold text-white">Ankit Lab Chemicals</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-8 text-lg">
@@ -168,6 +168,9 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center gap-4">
+            <motion.a href="https://wa.me/1234567890" target="_blank" className="text-gray-600 hover:text-green-600 transition-colors hover:drop-shadow-[0_0_5px_rgba(34,197,94,0.5)]">
+              <MessageCircle className="w-6 h-6" />
+            </motion.a>
             <Button onClick={() => navigate('/contact')} className="bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-blue-500/30">
               Request Quotation
             </Button>
@@ -209,9 +212,14 @@ const Navbar = () => {
                 </motion.div>
               ))}
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}>
-                <Button onClick={() => handleNavigation('/contact')} className="mt-8 bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-400 hover:to-blue-500 text-white font-semibold rounded-lg transition-all duration-300 px-8 py-4 text-xl">
-                  Request Quotation
-                </Button>
+                <div className="flex items-center gap-4 mt-8">
+                  <motion.a href="https://wa.me/1234567890" target="_blank" className="text-gray-600 hover:text-green-600 transition-colors hover:drop-shadow-[0_0_5px_rgba(34,197,94,0.5)]">
+                    <MessageCircle className="w-8 h-8" />
+                  </motion.a>
+                  <Button onClick={() => handleNavigation('/contact')} className="bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-400 hover:to-blue-500 text-white font-semibold rounded-lg transition-all duration-300 px-8 py-4 text-xl">
+                    Request Quotation
+                  </Button>
+                </div>
               </motion.div>
             </div>
           </motion.div>
