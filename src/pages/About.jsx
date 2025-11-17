@@ -20,7 +20,6 @@ const About = () => {
     { name: 'Wensar', logo: '/images/brands/wensar.jpeg' },
     { name: 'Systonic', logo: '/images/brands/sybstronics.png' },
     { name: 'Finar', logo: '/images/brands/finar.png' },
-    { name: 'Imparta', logo: '/images/brands/imparta.webp' },
     { name: 'Merck', logo: '/images/brands/Merck.webp' },
     { name: 'Polylab', logo: '/images/brands/polylab.jpg' },
   ];
@@ -42,7 +41,7 @@ const About = () => {
                 <span className="gradient-text">About Ankit Lab Chemicals</span>
               </h1>
               <p className="text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed">
-                Founded with a vision to support the scientific community, Ankit Lab Chemicals is a leading supplier and service provider of research-grade chemicals, laboratory consumables, and analytical instruments.
+                Founded with a vision to support the scientific community in Patna, Bihar, Ankit Lab Chemicals is a leading supplier and service provider of research-grade chemicals, laboratory consumables, and analytical instruments.
               </p>
             </motion.div>
           </div>
@@ -62,10 +61,10 @@ const About = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div className="text-left">
                   <p className="text-lg text-slate-600 mb-4">
-                    Founded with a vision to support the scientific community, Ankit Lab Chemicals is a leading supplier and service provider of research-grade chemicals, laboratory consumables, and analytical instruments.
+                    Founded with a vision to support the scientific community in Patna, Bihar, Ankit Lab Chemicals is a leading supplier and service provider of research-grade chemicals, laboratory consumables, and analytical instruments.
                   </p>
                   <p className="text-lg text-slate-600 mb-4">
-                    We collaborate with renowned brands such as Borosil, Wensar, Systonic, Finar, Imparta, and Merck, bringing you premium-quality products backed by expert support and competitive pricing.
+                    We collaborate with renowned brands such as Borosil, Wensar, Systonic, Finar, and Merck, bringing you premium-quality products backed by expert support and competitive pricing.
                   </p>
                   <p className="text-lg text-slate-600 mb-8">
                     Our mission is simple — to empower research and innovation by providing laboratories with the finest tools and materials they need to succeed.
@@ -93,7 +92,7 @@ const About = () => {
                 <Target className="w-16 h-16 text-teal-500 mb-6" />
                 <h3 className="text-2xl font-bold mb-4 text-teal-600">Our Mission</h3>
                 <p className="text-lg text-slate-600">
-                  To empower scientific advancement by providing unparalleled access to premium laboratory chemicals, instruments, and consumables, ensuring researchers and institutions have the tools they need for groundbreaking discoveries.
+                  To empower scientific advancement in Patna, Bihar by providing unparalleled access to premium laboratory chemicals, instruments, and consumables, ensuring researchers and institutions have the tools they need for groundbreaking discoveries.
                 </p>
               </div>
               <div className="glass-card p-8">

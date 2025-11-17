@@ -36,9 +36,9 @@ const Contact = () => {
                         <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-center mb-16">
                             <h1 className="text-4xl md:text-5xl font-bold mb-6">
                                 <Mail className="inline-block w-12 h-12 mr-4 text-teal-500" />
-                                <span className="gradient-text">Get In Touch</span>
+                                <span className="gradient-text">Get In Touch in Patna, Bihar</span>
                             </h1>
-                            <p className="text-xl text-slate-500 max-w-3xl mx-auto">Ready to elevate your research? Contact us today.</p>
+                            <p className="text-xl text-slate-500 max-w-3xl mx-auto">Ready to elevate your research in Patna, Bihar? Contact us today.</p>
                         </motion.div>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12" ref={ref}>
                             <motion.div initial={{ opacity: 0, x: -50 }} animate={isInView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.8, delay: 0.2 }}>
@@ -61,7 +61,7 @@ const Contact = () => {
                                 </form>
                             </motion.div>
                             <motion.div initial={{ opacity: 0, x: 50 }} animate={isInView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.8, delay: 0.4 }} className="space-y-8">
-                                <div className="glass-card p-6 flex items-start gap-4"><MapPin className="w-6 h-6 text-teal-500 mt-1 flex-shrink-0" /><div><h3 className="text-xl font-bold mb-2 text-slate-700">Address</h3><p className="text-slate-600 leading-relaxed">C/o-Ashok Kumar, Ground Floor, New Punaichak, Near Indu Niketan, Boring Canal Road, Patna, Bihar - 800001</p></div></div>
+                                <div className="glass-card p-6 flex items-start gap-4"><MapPin className="w-6 h-6 text-teal-500 mt-1 flex-shrink-0" /><div><h3 className="text-xl font-bold mb-2 text-slate-700">Address in Patna, Bihar</h3><p className="text-slate-600 leading-relaxed">C/o-Ashok Kumar, Ground Floor, New Punaichak, Near Indu Niketan, Boring Canal Road, Patna, Bihar - 800001</p></div></div>
                                 <div className="glass-card p-6 flex items-start gap-4"><Phone className="w-6 h-6 text-teal-500 mt-1 flex-shrink-0" /><div><h3 className="text-xl font-bold mb-2 text-slate-700">Phone</h3><a href="tel:7903894473" className="text-slate-600 hover:text-blue-500 transition-colors text-lg">7903894473</a></div></div>
                                 <div className="glass-card p-6 flex items-start gap-4"><Mail className="w-6 h-6 text-teal-500 mt-1 flex-shrink-0" /><div><h3 className="text-xl font-bold mb-2 text-slate-700">Email</h3><a href="mailto:ankitlabchemicals@gmail.com" className="text-slate-600 hover:text-blue-500 transition-colors text-lg break-all">ankitlabchemicals@gmail.com</a></div></div>
                                 <div className="glass-card w-full h-64 overflow-hidden"><iframe title="Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.5190691060963!2d85.11299931501786!3d25.62094298370059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed57f1390d7979%3A0x63346d0def635d08!2sBoring%20Canal%20Rd%2C%20Patna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1678886543210!5m2!1sen!2sin" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="grayscale contrast-125 opacity-80"></iframe></div>

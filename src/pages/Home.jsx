@@ -74,12 +74,12 @@ const Home = () => {
             >
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-slate-800">
                 <Beaker className="inline-block w-12 h-12 mr-4 text-teal-500" />
-                <span className="gradient-text">Empowering Research.</span>
+                <span className="gradient-text">Empowering Research in Patna.</span>
                 <br />
-                <span className="gradient-text">Delivering Excellence.</span>
+                <span className="gradient-text">Delivering Excellence in Bihar.</span>
               </h1>
               <p className="text-xl md:text-2xl text-slate-500 mb-12 max-w-xl mx-auto lg:mx-0 font-light">
-                Supplier of high-grade research chemicals, laboratory consumables, analytical instruments, and scientific equipment.
+                Leading supplier of high-grade research chemicals, laboratory consumables, analytical instruments, and scientific equipment in Patna, Bihar, India.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
                 <Button
@@ -134,7 +134,7 @@ const Home = () => {
               Our Product Range
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Discover our comprehensive collection of laboratory equipment, chemicals, and scientific instruments.
+              Discover our comprehensive collection of laboratory equipment, chemicals, and scientific instruments available in Patna, Bihar.
             </p>
           </motion.div>
 
@@ -187,7 +187,7 @@ const Home = () => {
               Trusted By Leading Institutions
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              We proudly serve prestigious universities, research institutions, and organizations across India.
+              We proudly serve prestigious universities, research institutions, and organizations across India, with a strong presence in Patna and Bihar.
             </p>
           </motion.div>
 
