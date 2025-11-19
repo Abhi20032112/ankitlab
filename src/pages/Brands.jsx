@@ -13,7 +13,6 @@ const Brands = () => {
         { name: 'Merck', ext: 'webp' },
         { name: 'Wensar', ext: 'jpeg' },
         { name: 'Sybstronics', ext: 'png' },
-        { name: 'Imparta', ext: 'webp' },
         { name: 'Polylab', ext: 'jpg' }
     ];
 

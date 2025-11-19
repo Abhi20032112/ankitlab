@@ -22,7 +22,7 @@ const Products = () => {
     {
       icon: Flask,
       title: 'Research Chemicals',
-      description: 'High-purity chemicals from Merck, Finar, and Imparta for precise laboratory research.',
+      description: 'High-purity chemicals from Merck and Finar for precise laboratory research.',
       details: 'Comprehensive range of analytical reagents, solvents, and standards with guaranteed purity levels. Includes organic and inorganic compounds, buffers, indicators, and specialty chemicals for research and quality control applications.',
       image: 'Laboratory chemicals and reagents in bottles',
     },

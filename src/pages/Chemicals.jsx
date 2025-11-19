@@ -183,7 +183,7 @@ const Chemicals = () => {
                                 <FlaskRound className="inline-block w-12 h-12 mr-4 text-teal-500" />
                                 <span className="gradient-text">Research Chemicals</span>
                             </h1>
-                            <p className="text-xl text-slate-500 max-w-3xl mx-auto">Sourced from leading brands like Merck, Finar, and Imparta for unmatched purity.</p>
+                            <p className="text-xl text-slate-500 max-w-3xl mx-auto">Sourced from leading brands like Merck and Finar for unmatched purity.</p>
                         </motion.div>
                         <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="mb-8">
                             <div className="relative max-w-md mx-auto">

@@ -120,7 +120,7 @@ const Footer = () => {
         </motion.div>
 
         <div className="border-t border-gray-700 pt-8 text-center text-gray-300 text-sm">
-          <p>© 2025 Ankit Lab Chemicals | Authorized Partner of Borosil, Wensar, Systonic, Finar, Imparta, Polylab & Merck</p>
+          <p>© 2025 Ankit Lab Chemicals | Authorized Partner of Borosil, Wensar, Systonic, Finar, Polylab & Merck</p>
           <p>Managed by <a href="https://ards.in" target="_blank" className="hover:text-blue-600 transition-colors"><span className="text-white">Alpenrose Digital Solutions</span></a></p>
         </div>
       </div>

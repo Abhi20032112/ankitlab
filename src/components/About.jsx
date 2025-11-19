@@ -43,7 +43,7 @@ const About = () => {
             Of industry-leading brands:
           </p>
           <div className="flex flex-wrap gap-4 text-lg font-semibold">
-            {['Borosil', 'Wensar', 'Systonic', 'Finar', 'Imparta', 'Merck', 'Polylab'].map((brand, index) => (
+            {['Borosil', 'Wensar', 'Systonic', 'Finar', 'Merck', 'Polylab'].map((brand, index) => (
               <motion.span
                 key={brand}
                 initial={{ opacity: 0, scale: 0.8 }}
