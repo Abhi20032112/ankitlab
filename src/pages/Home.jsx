@@ -74,9 +74,9 @@ const Home = () => {
             >
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-slate-800">
                 <Beaker className="inline-block w-12 h-12 mr-4 text-teal-500" />
-                <span className="gradient-text">Empowering Research in Patna.</span>
+                <span className="gradient-text">Empowering Research.</span>
                 <br />
-                <span className="gradient-text">Delivering Excellence in Bihar.</span>
+                <span className="gradient-text">Delivering Excellence.</span>
               </h1>
               <p className="text-xl md:text-2xl text-slate-500 mb-12 max-w-xl mx-auto lg:mx-0 font-light">
                 Leading supplier of high-grade research chemicals, laboratory consumables, analytical instruments, and scientific equipment in Patna, Bihar, India.

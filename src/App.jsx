@@ -10,6 +10,7 @@ import Chemicals from '@/pages/Chemicals';
 import Glassware from '@/pages/Glassware';
 import Instruments from '@/pages/Instruments';
 import Consumables from '@/pages/Consumables';
+import ProductDetail from '@/pages/ProductDetail';
 import Services from '@/pages/Services';
 import Brands from '@/pages/Brands';
 import Contact from '@/pages/Contact';
@@ -33,6 +34,7 @@ function App() {
             <Route path="products/glassware" element={<Glassware />} />
             <Route path="products/instruments" element={<Instruments />} />
             <Route path="products/consumables" element={<Consumables />} />
+            <Route path="products/:slug" element={<ProductDetail />} />
             <Route path="services" element={<Services />} />
             <Route path="brands" element={<Brands />} />
             <Route path="contact" element={<Contact />} />
