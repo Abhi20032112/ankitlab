@@ -6,13 +6,15 @@ const Partners = () => {
   const [ref, isInView] = useInView({ threshold: 0.2 });
 
   const partners = [
-    'Borosil',
-    'Finar',
-    'Merck',
-    'Wensar',
-    'Systonic',
-    'Imparta',
-    'Polylab',
+    { name: 'Apolo', ext: 'jpeg' },
+    { name: 'Borosil', ext: 'png' },
+    { name: 'Finar', ext: 'png' },
+    { name: 'IGENE', ext: 'jpeg' },
+    { name: 'Merck', ext: 'webp' },
+    { name: 'Polylab', ext: 'jpg' },
+    { name: 'PSAW', ext: 'jpeg' },
+    { name: 'Sybstronics', ext: 'png' },
+    { name: 'Wensar', ext: 'jpeg' },
   ];
 
   const clients = [
@@ -72,13 +74,17 @@ const Partners = () => {
               className="flex gap-8 pr-8"
             >
               {[...partners, ...partners].map((partner, index) => (
-                <div
-                  key={`${partner}-${index}`}
-                  className="glass-card px-12 py-8 min-w-[200px] flex items-center justify-center hover:bg-white/10 transition-all duration-300 group"
-                >
-                  <span className="text-2xl font-bold gradient-text group-hover:scale-110 transition-transform">
-                    {partner}
-                  </span>
+                <div key={`partner-${index}`} className="flex-shrink-0 w-64 h-32 glass-card flex items-center justify-center hover:bg-white/90 transition-all duration-300 group relative">
+                  <img
+                    src={`/images/brands/${partner.name.toLowerCase()}.${partner.ext}`}
+                    alt={`${partner.name} logo`}
+                    className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                      e.target.nextSibling.style.display = 'block';
+                    }}
+                  />
+                  <span className="text-4xl font-bold gradient-text group-hover:scale-110 transition-transform hidden">{partner.name}</span>
                 </div>
               ))}
             </motion.div>

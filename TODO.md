@@ -1,13 +1,7 @@
-# TODO: Remove Imparta from Website
+# TODO: Add All Brand Images as Logos in Partnership Page
 
-## Files to Edit:
-- [x] src/pages/Chemicals.jsx: Update description to remove "and Imparta"
-- [x] src/pages/Brands.jsx: No Imparta in partners array - no changes needed
-- [ ] src/components/About.jsx: Remove 'Imparta' from brands list
-- [x] src/components/Products.jsx: No Imparta in description - no changes needed
-- [x] src/components/Partners.jsx: No Imparta in partners array - no changes needed
-- [ ] src/components/Footer.jsx: Remove "Imparta, " from authorized partners text
-
-## Next Steps:
-- [ ] Test the website to ensure Imparta is completely removed
-- [ ] Rebuild the project if necessary
+## Tasks
+- [x] Update partners array in Partners.jsx to include all 9 brands with name and ext properties
+- [x] Modify the rendering logic in Partners.jsx to display images instead of text
+- [x] Adjust styling for proper image display (e.g., change min-w-[200px] to w-64 h-32)
+- [x] Test the updated component to ensure images load correctly

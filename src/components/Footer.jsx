@@ -121,7 +121,25 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 pt-8 text-center text-gray-300 text-sm">
           <p>© 2025 Ankit Lab Chemicals | Authorized Partner of Borosil, Wensar, Systonic, Finar, Polylab & Merck</p>
-          <p>Managed by <a href="https://ards.in" target="_blank" className="hover:text-blue-600 transition-colors"><span className="text-white">Alpenrose Digital Solutions</span></a></p>
+          <p>Managed by <a href="https://ards.in" target="_blank" className="hover:text-blue-600 transition-colors">
+            <motion.span
+              className="text-white"
+              animate={{
+                textShadow: [
+                  "0 0 5px rgba(255,255,255,0.5)",
+                  "0 0 10px rgba(255,255,255,0.8)",
+                  "0 0 5px rgba(255,255,255,0.5)"
+                ]
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+            >
+              Alpenrose Digital Solutions
+            </motion.span>
+          </a></p>
         </div>
       </div>
     </footer>
